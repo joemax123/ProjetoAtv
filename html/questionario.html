@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/questionaro.css">
 </head>
 <body>
-    <div class="questioario">
-       <p id="pergunta"></p>
-       <div style=" gap: 15px; ">
-           <button id="R1" style="padding: 20px;">resposta</button>
+
+    <div class="questionario">
+       <p id="pergunta" class="pergunta"></p>
+       <div class="respostas">
+           <button id="R1" onclick="questionario()" style="padding: 20px;">resposta</button>
            <button id="R2" style="padding: 20px;">resposta</button>
-           <button id="R1" style="padding: 20px;">resposta</button>
+           <button id="R3" style="padding: 20px;">resposta</button>
            <br><br><br>
-           <h3>resultado:</h3>
-           <p id="resultado"></p>
-       </div>
+           <button id="Pp" class="Pp">Proxima pergunta</button>
+        </div>
+    
     </div>
+
+    <script src="../js/script.js"></script>
 </body>
 </html>

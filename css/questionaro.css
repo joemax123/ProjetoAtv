@@ -1,0 +1,41 @@
+
+
+body{
+    background-color: rgb(241, 241, 241);
+   text-align: center;
+}
+.questionario{
+    width: 800px;
+    height: 420px;
+    background-color: rgb(87, 145, 233);
+    text-align: center;
+    align-content:center;   
+    margin-top: 180px;
+    margin-left: 490px;    
+    border-radius: 7px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 2px;
+}
+
+.pergunta{
+    background-color: whitesmoke;
+    width: 580px;
+    height: 120px;
+    font-size: 22px;
+    margin-left: 100px;
+     border-radius: 5px;
+    border: 1px solid black;
+}
+.respostas{
+    margin: 20px;
+}
+button{
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.Pp{
+    height:50px;
+font-size: 17px;
+margin-left: 500px;
+}
