@@ -1,7 +1,10 @@
 
 
+
+
+
 let pergunta = [
-    "Como você reage quando recebe uma crítica?",
+    
     "Como você lida com trabalhos em equipe?",
     "O que você faz quando surge um conflito?",
     "Como você reage diante de uma tarefa difícil?",
@@ -14,7 +17,6 @@ let pergunta = [
 ];
 
 let resposta1 = [
-    "Aceito e melhoro",
     "Colaboro bem",
     "Busco dialogar",
     "Busco soluções",
@@ -27,7 +29,6 @@ let resposta1 = [
 ];
 
 let resposta2 = [
-    "Penso sobre ela",
     "Faço minha parte",
     "Aguardo o momento certo",
     "Tento aos poucos",
@@ -40,7 +41,6 @@ let resposta2 = [
 ];
 
 let resposta3 = [
-    "Fico na defensiva",
     "Prefiro trabalhar sozinho",
     "Evito o problema",
     "Desisto facilmente",
@@ -59,8 +59,35 @@ let r1 = document.getElementById('R1')
 let r2 = document.getElementById('R2')
 let r3 = document.getElementById('R3')
  
+let pontuacao = 0;
 
+r1.addEventListener("click", function() {
+    pontuacao += 2;
+    avancar();
+});
 
+r2.addEventListener("click", function() {
+    pontuacao += 1;
+    avancar();
+});
+
+r3.addEventListener("click", function() {
+    pontuacao += 0;
+    avancar();
+});
+
+if(5>pontuacao){
+    document.getElementById('ponto').innerHTML = pontuacao
+    document.getElementById('nivel').innerHTML = "🔴Critico "
+}else if( 5<=pontuacao && pontuacao<11){
+    document.getElementById('ponto').innerHTML = pontuacao
+    document.getElementById('nivel').innerHTML = "🟡abaixo da expectativa "
+}
+
+function mostrarpontuacao(){
+document.getElementById('ponto').textContent = pontuacao
+
+}
 
 function questionario( IDpergunta){
 
@@ -80,13 +107,8 @@ function avancar(){
 questionario(increment)
 
  increment++
-
-
-    
-if(increment>9){
-    increment = 0
+mostrarpontuacao()
 }
- }
 
 
 

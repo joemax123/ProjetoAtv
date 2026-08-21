@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/questionaro.css">
 </head>
+
 <body>
 
     <div class="questionario">
-       <p id="pergunta" class="pergunta"></p>
-       <div class="respostas">
-           <button id="R1" onclick="questionario()" style="padding: 20px; width: 120px;">resposta</button>
-           <button id="R2" style="padding: 20px; width: 120px">resposta</button>
-           <button id="R3" style="padding: 20px; width: 120px">resposta</button>
-           <br><br><br>
-               <button onclick="voltar()" id="Pa" class="Pa">Pergunta anterior</button>
-               <button onclick="avancar()" id="Pp" class="Pp">Proxima pergunta</button>
-  
+        <p id="pergunta" class="pergunta">Como você reage quando recebe uma crítica?</p>
+        <div class="respostas">
+            <button id="R1" onclick="respostas()" style="padding: 20px; width: 120px;">Aceito e melhoro</button>
+            <button id="R2" onclick="respostas()" style="padding: 20px; width: 120px">Penso sobre ela</button>
+            <button id="R3" onclick="respostas()" style="padding: 20px; width: 120px">Fico na defensiva"</button>
+            <br><br><br>
         </div>
-    
-    </div>
+        <div class="pontuacao">
+            <p>Pontuação:</p>
+            <p id="ponto"></p>
+            <p id="nivel"></p>
+        </div>
 
-    <script src="../js/script.js"></script>
+        <script src="../js/script.js"></script>
 </body>
+
 </html>

@@ -6,7 +6,7 @@ body{
 }
 .questionario{
     width: 800px;
-    height: 420px;
+    height: 460px;
     background-color: rgb(87, 145, 233);
     text-align: center;
     align-content:center;   
@@ -33,6 +33,7 @@ body{
 button{
     border-radius: 5px;
     border: 1px solid black;
+    
 }
 
 .Pp{
@@ -46,4 +47,12 @@ width: 150px;
 height:50px;
 font-size: 17px;
 margin-right:340px;
+ }
+
+ .pontuacao{
+    background-color: white;
+    width: 200px;
+    margin-left: 300px;
+    height: 110px;
+    font-size: 18px;
  }
