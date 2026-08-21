@@ -11,11 +11,13 @@
     <div class="questionario">
        <p id="pergunta" class="pergunta"></p>
        <div class="respostas">
-           <button id="R1" onclick="questionario()" style="padding: 20px;">resposta</button>
-           <button id="R2" style="padding: 20px;">resposta</button>
-           <button id="R3" style="padding: 20px;">resposta</button>
+           <button id="R1" onclick="questionario()" style="padding: 20px; width: 120px;">resposta</button>
+           <button id="R2" style="padding: 20px; width: 120px">resposta</button>
+           <button id="R3" style="padding: 20px; width: 120px">resposta</button>
            <br><br><br>
-           <button id="Pp" class="Pp">Proxima pergunta</button>
+               <button onclick="voltar()" id="Pa" class="Pa">Pergunta anterior</button>
+               <button onclick="avancar()" id="Pp" class="Pp">Proxima pergunta</button>
+  
         </div>
     
     </div>
