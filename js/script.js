@@ -127,35 +127,26 @@ function mostrarResultado() {
 
     if (pontuacao >= 16) {
         resultado.innerHTML = `
-            <div class="azul">
-                🔵 <strong>Acima da expectativa</strong>
-                <br>
+                <p>🔵Acima da expectativa</p>
                 Pontuação: ${pontuacao}/20
-            </div>
         `;
     } else if (pontuacao >= 11) {
         resultado.innerHTML = `
-            <div class="verde">
-                🟢 <strong>Dentro da expectativa</strong>
-                <br>
+            
+                <p>🟢Dentro da expectativa</p>
                 Pontuação: ${pontuacao}/20
-            </div>
+        
         `;
     } else if (pontuacao >= 6) {
         resultado.innerHTML = `
-            <div class="amarelo">
-                🟡 <strong>Abaixo da expectativa</strong>
-                <br>
+                <p>🟡Abaixo da expectativa</p>
                 Pontuação: ${pontuacao}/20
-            </div>
         `;
     } else {
         resultado.innerHTML = `
-            <div class="vermelho">
-                🔴 <strong>Crítico</strong>
-                <br>
+               <p>🔴Crítico</p>
                 Pontuação: ${pontuacao}/20
-            </div>
+
         `;
     }
 }
