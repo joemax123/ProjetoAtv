@@ -33,6 +33,7 @@ body{
 button{
     border-radius: 5px;
     border: 1px solid black;
+    height: 40px;
 }
 
 .Pp{
@@ -51,4 +52,9 @@ margin-right:340px;
     background-color: white;
     width: 300px;
     font-size: 20px;
+    margin-left: 250px;
+ }
+
+ .retornar{
+    
  }
