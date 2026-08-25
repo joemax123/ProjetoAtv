@@ -66,17 +66,19 @@ nav a {
     transition: 0.3s;
 }
 
-
-.btn-login {
-    color: white;
-    border: 1px solid rgb(87,145,233);
-    background-color: rgb(87,145,233);
-}
-
-.btn-cadastrar {
+.btn-login,
+.btn-cadastrar,
+.btn-questionario {
     color: white;
     background: rgb(87,145,233);
     border: 1px solid rgb(87,145,233);
+}
+
+.btn-login:hover,
+.btn-cadastrar:hover,
+.btn-questionario:hover {
+    background: rgb(70,125,215);
+    border-color: rgb(70,125,215);
 }
 
 
@@ -109,9 +111,9 @@ nav a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-align-items: center;
+    align-items: center;
 
-text-align: center;
+ text-align: center;
 }
 
 .hero h1 {
