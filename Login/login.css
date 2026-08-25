@@ -6,46 +6,50 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: white;
+    background-color: #ffffff;
 }
 
 .container {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 .form-box {
-    width: 350px;
+    width: 360px;
     padding: 30px;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 6px;
+    background-color: white;
 }
 
 h1 {
     text-align: center;
     color: rgb(87, 145, 233);
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
-p {
+.form-box > p {
     text-align: center;
     color: #666;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 label {
     display: block;
-    margin-bottom: 5px;
-    margin-top: 10px;
+    margin-bottom: 6px;
+    margin-top: 14px;
+    color: #333;
 }
 
 input {
     width: 100%;
+    height: 40px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-size: 14px;
 }
 
 input:focus {
@@ -53,21 +57,31 @@ input:focus {
     border-color: rgb(87, 145, 233);
 }
 
-button {
+form button {
     width: 100%;
-    padding: 10px;
-    margin-top: 20px;
+    height: 40px;
+    margin-top: 22px;
     border: none;
     border-radius: 4px;
     background-color: rgb(87, 145, 233);
     color: white;
-    cursor: pointer;
+    font-size: 15px;
 }
-
-button:hover {
-    background-color: rgb(67, 125, 213);
-}
-
 .cadastro {
-    margin-top: 20px;
+    margin-top: 25px;
+}
+
+.cadastro p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.cadastro button {
+    width: 100%;
+    height: 38px;
+    border: 1px solid rgb(87, 145, 233);
+    border-radius: 4px;
+    background-color: white;
+    color: rgb(87, 145, 233);
 }

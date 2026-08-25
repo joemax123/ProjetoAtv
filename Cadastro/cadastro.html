@@ -1,45 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <link rel="stylesheet" href="../Cadastro/cadastro.css">
+    <div href="../Login/login.html">
 </head>
+
 <body>
 
     <div class="container">
+
         <div class="form-box">
 
             <h1>Cadastro</h1>
-            <p>Crie sua conta</p>
+            <p>Crie sua conta no sistema</p>
 
             <form id="cadastroForm">
 
-                <label>Nome</label>
-                <input type="text" id="nome" required>
+                <label for="nome">Nome</label>
+                <input
+                    type="text"
+                    id="nome"
+                    placeholder="Digite seu nome"
+                >
 
-                <label>E-mail</label>
-                <input type="email" id="email" required>
+                <label for="email">E-mail</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Digite seu e-mail"
+                >
 
-                <label>Senha</label>
-                <input type="password" id="senha" required>
+                <label for="senha">Senha</label>
+                <input
+                    type="password"
+                    id="senha"
+                    placeholder="Minimo 6 caracteres"
+                >
 
-                <label>Confirmar senha</label>
-                <input type="password" id="confirmarSenha" required>
+                <label for="confirmarSenha">Confirmar senha</label>
+                <input
+                    type="password"
+                    id="confirmarSenha"
+                    placeholder="Digite a senha novamente"
+                >
 
                 <button type="submit">Cadastrar</button>
 
             </form>
 
             <div class="login">
+
                 <p>Já possui uma conta?</p>
-                <button id="botaoLogin">Voltar para o login</button>
+
+                <button type="button" id="botaoLogin">
+                    Voltar para o login
+                </button>
+
             </div>
 
         </div>
+
     </div>
 
     <script src="../Cadastro/cadastro.js"></script>
+
 </body>
+
 </html>
