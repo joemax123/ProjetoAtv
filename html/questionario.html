@@ -8,17 +8,29 @@
 </head>
 <body>
 
-    <div class="questionario">
-       <p id="pergunta" class="pergunta"></p>
-       <div class="respostas">
-           <button id="R1" onclick="questionario()" style="padding: 20px; width: 120px;">resposta</button>
-           <button id="R2" style="padding: 20px; width: 120px">resposta</button>
-           <button id="R3" style="padding: 20px; width: 120px">resposta</button>
-           <br><br><br>
-               <button onclick="voltar()" id="Pa" class="Pa">Pergunta anterior</button>
-               <button onclick="avancar()" id="Pp" class="Pp">Proxima pergunta</button>
-  
-        </div>
+  <div class="questionario">
+
+    <p id="pontuacao" class="pontuacao">Pontuação: 0/20</p>
+
+    <p id="pergunta" class="pergunta"></p>
+
+    <div class="respostas">
+        <button id="R1" class="resposta">Resposta</button>
+        <button id="R2" class="resposta">Resposta</button>
+        <button id="R3" class="resposta">Resposta</button>
+    </div>
+
+    <button onclick="voltar()" id="Pa" class="Pa">
+        Pergunta anterior
+    </button>
+
+    <button onclick="avancar()" id="Pp" class="Pp">
+        Próxima pergunta
+    </button>
+
+    <div id="resultado"></div>
+
+</div>
     
     </div>
 
